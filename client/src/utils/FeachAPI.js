@@ -1,9 +1,9 @@
 import axios from "axios";
-const bassUrl = `http://localhost:3001`;
+const bassUrl = `https://netlify-deploy-ll24ev68i-ayushbirla71.vercel.app`;
 
 const FeachApi = async (Obj) => {
   try {
-    Obj.baseURL='http://localhost:3001'
+    Obj.baseURL=bassUrl
 
     let {data}= await axios(Obj);
   
